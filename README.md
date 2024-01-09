@@ -25,7 +25,11 @@ U map:
 
 ![patch_label](https://github.com/understars0516/cmb_delensing/assets/32385394/93075bb2-060b-41b4-b247-70cd9f308f52)
 
+# Prediction:
 ![patch_pred](https://github.com/understars0516/cmb_delensing/assets/32385394/d0dc94d3-671f-4e79-bead-ee233684c97e)
 
 # arr map to images(arr_nside2048_192x512x512.npy), images to map(rearr_nside2048.fits)
-https://pan.baidu.com/s/1LW1vVcCRIOpteNgKV2EuEA?pwd=kibp 
+https://pan.baidu.com/s/1LW1vVcCRIOpteNgKV2EuEA?pwd=kibp  (code: kibp)
+
+# data example:
+https://pan.baidu.com/s/1liha7rSQSwPgjdU3rHeNsg?pwd=bhdu (code: bhdu)
