@@ -48,5 +48,5 @@ U map:
 # arr map to images(arr_nside2048_192x512x512.npy), images to map(rearr_nside2048.fits)
 https://pan.baidu.com/s/1LW1vVcCRIOpteNgKV2EuEA?pwd=kibp  (code: kibp)
 
-# data example:
+# one universe simulation:
 https://pan.baidu.com/s/1liha7rSQSwPgjdU3rHeNsg?pwd=bhdu (code: bhdu)
