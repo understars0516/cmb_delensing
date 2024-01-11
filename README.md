@@ -3,8 +3,24 @@
 Read the full publication here:  https://arxiv.org/abs/2310.07358
 
 # Data simulation
-- lenspyx:
-- https://github.com/carronj/lenspyx
+
+### cls simulation with camb
+- Download camb from https://github.com/cmbant/CAMB,  and install
+- simulate CMB angular power spectrum with different cosmological parameters.
+
+example:
+$C_\ell^{TT}$
+![TT_cl_ratio](https://github.com/understars0516/cmb_delensing/assets/32385394/f8789e11-4b29-4cd2-a8ca-51bd96a72b8f)
+
+$C_\ell^{EE}$
+![EE_cl](https://github.com/understars0516/cmb_delensing/assets/32385394/af135d57-de53-4b49-badb-4515d36571ee)
+
+$C_\ell^{BB}$
+![cl_map](https://github.com/understars0516/cmb_delensing/assets/32385394/2089bfe4-093c-4962-8c9a-0aa8d78b2c1d)
+
+
+### map simulation with lenspyx
+- Download lenspyx  https://github.com/carronj/lenspyx, and install
 
 example:
 T map:
