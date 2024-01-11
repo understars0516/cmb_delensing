@@ -16,7 +16,8 @@ $C_\ell^{EE}$
 ![EE_cl](https://github.com/understars0516/cmb_delensing/assets/32385394/af135d57-de53-4b49-badb-4515d36571ee)
 
 $C_\ell^{BB}$
-![cl_map](https://github.com/understars0516/cmb_delensing/assets/32385394/2089bfe4-093c-4962-8c9a-0aa8d78b2c1d)
+![result_best_eb](https://github.com/understars0516/cmb_delensing/assets/32385394/2b5b9c40-cd30-4fa7-a856-2397960b9195)
+
 
 
 ### map simulation with lenspyx
