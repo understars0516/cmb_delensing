@@ -37,13 +37,17 @@ U map:
 ![unet_2p](https://github.com/understars0516/cmb_delensing/assets/32385394/5b94cd70-e75b-46c3-ac0e-537ccdaf91b4)
 
 
-# Dataset:
+# Train Dataset:
 ![patch_train](https://github.com/understars0516/cmb_delensing/assets/32385394/7063fe35-c678-4b40-a9c2-9aeb3e9cf5a5)
 
 ![patch_label](https://github.com/understars0516/cmb_delensing/assets/32385394/93075bb2-060b-41b4-b247-70cd9f308f52)
 
-# Prediction:
-![patch_pred](https://github.com/understars0516/cmb_delensing/assets/32385394/d0dc94d3-671f-4e79-bead-ee233684c97e)
+# Pred Dataset:
+![patch_train_test](https://github.com/understars0516/cmb_delensing/assets/32385394/289f0e28-704d-45ac-baad-5c82df95af7c)
+
+![patch_label_test](https://github.com/understars0516/cmb_delensing/assets/32385394/9809c9ec-c3c1-440c-a329-c6b91ae1bbd6)
+
+![patch_train_pred](https://github.com/understars0516/cmb_delensing/assets/32385394/4c3735f9-f53b-4ed4-9572-1babf504715e)
 
 # arr map to images(arr_nside2048_192x512x512.npy), images to map(rearr_nside2048.fits)
 https://pan.baidu.com/s/1LW1vVcCRIOpteNgKV2EuEA?pwd=kibp  (code: kibp)
