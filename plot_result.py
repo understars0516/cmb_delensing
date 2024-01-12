@@ -74,15 +74,15 @@ lmax = 2048; rot = 0; supervision = 4
 prec1 = 4; prec2 = prec1 + 1 
 test_T = np.load("result/T_train_mean.npy").reshape(-1)[rearr]
 label_T = np.load("result/T_label_mean.npy").reshape(-1)[rearr]
-pred_T = np.load("result/T_pred_mean.npy").reshape(-1)[rearr]*prec1/prec2 + label_T/prec2
+pred_T = np.load("result/T_pred_mean.npy").reshape(-1)[rearr]
 
 test_Q = np.load("result/Q_train_mean.npy").reshape(-1)[rearr]
 label_Q = np.load("result/Q_label_mean.npy").reshape(-1)[rearr]
-pred_Q = np.load("result/Q_pred_mean.npy").reshape(-1)[rearr]*prec1/prec2 + label_Q/prec2
+pred_Q = np.load("result/Q_pred_mean.npy").reshape(-1)[rearr]
 
 test_U = np.load("result/U_train_mean.npy").reshape(-1)[rearr]
 label_U = np.load("result/U_label_mean.npy").reshape(-1)[rearr]
-pred_U = np.load("result/U_pred_mean.npy").reshape(-1)[rearr]*prec1/prec2 + label_U/prec2
+pred_U = np.load("result/U_pred_mean.npy").reshape(-1)[rearr]
 
 
 field = 3 # 0 for TT; 1 for EE; 2 for BB; 3 for TE
