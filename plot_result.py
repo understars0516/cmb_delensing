@@ -85,7 +85,7 @@ label_U = np.load("result/U_label_mean.npy").reshape(-1)[rearr]
 pred_U = np.load("result/U_pred_mean.npy").reshape(-1)[rearr]
 
 
-field = 3 # 0 for TT; 1 for EE; 2 for BB; 3 for TE
+field = 0 # 0 for TT; 1 for EE; 2 for BB; 3 for TE
 cl_test = hp.anafast([test_T, test_Q, test_U], lmax=lmax)[field]
 cl_label = hp.anafast([label_T, label_Q, label_U], lmax=lmax)[field]
 cl_pred = hp.anafast([pred_T, pred_Q, pred_U], lmax=lmax)[field]
