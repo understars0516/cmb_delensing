@@ -12,8 +12,8 @@ def rotate_map(mmap, ra, dec):
     return rot_map
 
 TQU = 'T'
-Tlen = np.load("%slen_nside2048_30.npy"%TQU)
-Tunlen = np.load("%sunlen_nside2048_30.npy"%TQU)
+Tlen = np.load("map_data/%slen_nside2048_30.npy"%TQU)
+Tunlen = np.load("map_data/%sunlen_nside2048_30.npy"%TQU)
 
 arr = np.load("../data/arr_nside2048_192x512x512.npy").astype('int')
 
