@@ -44,10 +44,14 @@ pip install healpy==1.16.1
 ### Data Preprocessing
 
 Configure the CAMB $\mathbf{params.ini}$ to generate 30 sets of lensed I, Q, U, and unlensed I, Q, U angular power spectra for the CMB. 
-
+```bash
+# params.ini
 get_tensor_cls = T
-
 do_lensing     = T
+do_nonlinear = 2
+l_max_scalar = 6000
+l_max_tensor = 3000
+```
 
 I: $$A_s=[2.0\times 10^{-9},2.1\times 10^{-9},2.2\times 10^{-9},2.3\times 10^{-9},2.4\times 10^{-9}]$$, and $$n_s =[0.94, 0.95, 0.96, 0.97, 0.98, 0.99]$$
 
