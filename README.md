@@ -81,7 +81,7 @@ import healpy as hp
 
 
 epochs = 10000
-thetas = [-180, -120, -60, 0, 60, 120, 180]
+thetas = [-180, -120, -60, 0, 60, 120]
 phis = [-60, -30, 0, 30, 60]
 nside = 2048
 T_pred = np.zeros(hp.nside2npix(nside))
