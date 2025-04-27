@@ -69,11 +69,11 @@ history = net.fit(train, label, epochs=epochs, batch_size=batch_size, validation
 
 pred_test = net.predict(train_test)
 
-np.save("result/%s_rot_train_loss_epoch%d.npy"%(TQU, epochs), history.history['loss'])
-np.save("result/%s_rot_val_loss_epoch%d.npy"%(TQU, epochs), history.history['val_loss'])
+np.save("result/%s_rot_train_loss.npy"%TQU, history.history['loss'])
+np.save("result/%s_rot_val_loss.npy"%TQU, history.history['val_loss'])
 
-rearr = hp.read_map("data/rearr_nside2048.fits") # rearr: reassemble the segmented images into an full-sky map.
-hp.write_map("result/%s__rot_theta_%d_phi_%d_epoch-%d_train.npy"%(theta, phi, TQU, epochs), train_test.reshape(-1)[rearr], overwrite=True)
-hp.write_map("result/%s__rot_theta_%d_phi_%d_epoch-%d_label.npy"%(theta, phi, TQU, epochs), label_test.reshape(-1)[rearr], overwrite=True)
-hp.write_map("result/%s__rot_theta_%d_phi_%d_epoch-%d_pred.npy"%(theta, phi, TQU, epochs), pred_test.reshape(-1)[rearr], overwrite=True)
+rearr = hp.("data/rearr_nside2048.fits") # rearr: reassemble the segmented images into an full-sky map.
+hp.write_map("result/%s_rot_theta_%d_phi_%d_train.npy"%(theta, phi, TQU), train_test.reshape(-1)[rearr], overwrite=True)
+hp.write_map("result/%s_rot_theta_%d_phi_%d_label.npy"%(theta, phi, TQU), label_test.reshape(-1)[rearr], overwrite=True)
+hp.write_map("result/%s_rot_theta_%d_phi_%d_pred.npy"%(theta, phi, TQU), pred_test.reshape(-1)[rearr], overwrite=True)
 
