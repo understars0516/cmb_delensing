@@ -17,10 +17,24 @@ Rotate the full-sky map according to the angles below.
 
 For I: $A_s$=[ $2.0\times 10^{-9},~ 2.1\times 10^{-9},~ 2.2\times 10^{-9}, ~2.3\times 10^{-9}, ~2.4\times 10^{-9}$] , $n_s$ =[$0.94, 0.95, 0.96, 0.97, 0.98, 0.99$]
 
-For Q, U: Q, U:  $w$ =[$-1.025$, $-1$, $-0.975$],  $r$ =[ $0.001, 0.002, 0.003, 0.004, 0.005, 0.006, 0.007, 0.008, 0.009, 0.01$]
+For Q, U:  $w$ =[$-1.025$, $-1$, $-0.975$],  $r$ =[ $0.001, 0.002, 0.003, 0.004, 0.005, 0.006, 0.007, 0.008, 0.009, 0.01$]
 
 
 
 Rot full-sky maps:
 [rot_data_map](https://drive.google.com/drive/folders/18XHVer4XZwZM2ptm7uxZFUC-Oi5kswBr?usp=sharing)
 Download the lensed and unlensed versions of T, Q, and U separately. These datasets are already segmented and can be directly used for processing with UNet++.
+
+
+```bash
+import numpy as np
+
+Tlen = hp.read_map("Tlen_nside_2048_1_rot_theta-0_phi-0.npy")
+Tunl = hp.read_map("Tunl_nside_2048_1_rot_theta-0_phi-0.npy")
+
+Qlen = hp.read_map("Qlen_nside_2048_1_rot_theta-0_phi-0.npy")
+Uunl = hp.read_map("Qunl_nside_2048_1_rot_theta-0_phi-0.npy")
+
+Ulen = hp.read_map("Ulen_nside_2048_1_rot_theta-0_phi-0.npy")
+Uunl = hp.read_map("Uunl_nside_2048_1_rot_theta-0_phi-0.npy")
+```
