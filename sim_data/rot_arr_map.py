@@ -17,7 +17,7 @@ Tunlen = np.load("map_data/%sunlen_nside2048_30.npy"%TQU)
 
 arr = np.load("../data/arr_nside2048_192x512x512.npy").astype('int')
 
-thetas = [-180, -120, -60, 0, 60, 120, 180]
+thetas = [-180, -120, -60, 0, 60, 120]
 phis = [-60, -30, 0, 30, 60]
 
 for theta in thetas:
