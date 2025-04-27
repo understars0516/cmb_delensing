@@ -14,7 +14,9 @@ Tunl = hp.read_map("Tunl_w_-1.000_r_0.010.fits")[arr].reshape(192, 512, 512, 1)
 ```
 
 Rotate the full-sky map according to the angles below.
+
 For I: $A_s$=[ $2.0\times 10^{-9},~ 2.1\times 10^{-9},~ 2.2\times 10^{-9}, ~2.3\times 10^{-9}, ~2.4\times 10^{-9}$] , $n_s$ =[$0.94, 0.95, 0.96, 0.97, 0.98, 0.99$]
+
 For Q, U: Q, U:  $w$ =[$-1.025$, $-1$, $-0.975$],  $r$ =[ $0.001, 0.002, 0.003, 0.004, 0.005, 0.006, 0.007, 0.008, 0.009, 0.01$]
 
 
