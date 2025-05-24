@@ -79,5 +79,5 @@ python run.py
 We also provide a sample file in the [example.ipynb](https://github.com/understars0516/cmb_delensing/blob/main/example.ipynb) format. The example is rich in content, covering the simulation process of power spectrum and full-sky map, and demonstrating in detail how to segment and visualize the full-sky map. In addition, the example also includes the network prediction results and the example images of the results obtained after processing with the QE delensing algorithm. Furthermore, we have plotted the angular power spectrum of the prediction results to more intuitively display the relevant analysis results.
 
 
-
-
+### run the test datasets
+Due to GitHub's size limit on uploaded files, we cannot upload large data files, so we uploaded the relevant data to [Google Drive](https://drive.google.com/drive/folders/1DelPqaa7lX_1CWxzHI10VJnJO5cwJMS0?usp=drive_link). On this cloud storage platform, you can download all program files and supporting data, and these data have been configured properly and can be directly used.
