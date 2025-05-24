@@ -75,35 +75,9 @@ python run.py
 
 
 
+### ipynb example
+We also provide a sample file in the [example.ipynb](https://github.com/understars0516/cmb_delensing/blob/main/example.ipynb) format. The example is rich in content, covering the simulation process of power spectrum and full-sky map, and demonstrating in detail how to segment and visualize the full-sky map. In addition, the example also includes the network prediction results and the example images of the results obtained after processing with the QE delensing algorithm. Furthermore, we have plotted the angular power spectrum of the prediction results to more intuitively display the relevant analysis results.
 
-
-### Result Processing
-
-```python
-import numpy as np
-import healpy as hp
-
-
-epochs = 10000
-thetas = [-180, -120, -60, 0, 60, 120]
-phis = [-60, -30, 0, 30, 60]
-nside = 2048
-T_pred = np.zeros(hp.nside2npix(nside))
-for theta in thetas:
-    for phi in phis:
-        T = hp.read_map("result/T_rot_theta_%d_phi_%d_train.npy"%(theta, phi))
-        T_pred = T_pred + T
-        Q = hp.read_map("result/Q_rot_theta_%d_phi_%d_label.npy"%(theta, phi))
-        Q_pred = Q_pred + Q
-        U = hp.read_map("result/U_rot_theta_%d_phi_%d_pred.npy"%(theta, phi))
-        U_pred = U_pred + U
-        
-T_pred = T_pred/30
-Q_pred = Q_pred/30
-U_pred = U_pred/30
-
-
-```
 
 
 
