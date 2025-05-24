@@ -57,7 +57,10 @@ I: $$A_s=[2.0\times 10^{-9},2.1\times 10^{-9},2.2\times 10^{-9},2.3\times 10^{-9
 
 Q, U:  $$w =[-1.025, -1, -0.975]$$, and $$r =[ 0.001, 0.002, 0.003, 0.004, 0.005, 0.006, 0.007, 0.008, 0.009, 0.01]$$
 
-Then, use the $\mathbf{lenspyx}$ tool to generate the  lensed T, Q, U full-sky maps and unlensed T, Q, U full-sky maps with a resolution of $nside=2048$ based on these power spectra.
+Then, use the $\mathbf{lenspyx}$ tool to generate the  lensed I, Q, U full-sky maps and unlensed I, Q, U full-sky maps with a resolution of $nside=2048$ based on these power spectra.
+
+Subsequently, we use the three parameters I/Q/U to generate the corresponding T/E/B mode, and all subsequent network training work will be based on this T/E/B mode.
+
 
 Use the [arr_nside2048_192x512x512.npy](https://drive.google.com/file/d/1Q4QOPStMdreQ2Ic0JqNF2ZLRVPnnczMX/view?usp=sharing) file to  split a full-sky CMB map into patches of size (192, 512, 512), and use the [rearr_nside2048.npy](https://drive.google.com/file/d/1WJbkHwrOCrO-HY24FCAqQi2NcWfqc6fU/view?usp=drive_link)  to restore the sky maps.
 
