@@ -38,10 +38,25 @@ pip install scipy==1.9.3
 pip install astropy==6.1.7
 pip install healpy==1.16.1
 ```
+### Cloning the Repository
+
+Clone the repository locally using Git:
+
+```bash
+git clone https://github.com/understars0516/cmb_delensing.git
+cd cmb_delensing
+python run.py
+```
+
+### ipynb example
+We also provide a sample file in the [example.ipynb](https://github.com/understars0516/cmb_delensing/blob/main/example.ipynb) format. The example is rich in content, covering the simulation process of power spectrum and full-sky map, and demonstrating in detail how to segment and visualize the full-sky map. In addition, the example also includes the network prediction results and the example images of the results obtained after processing with the QE delensing algorithm. Furthermore, we have plotted the angular power spectrum of the prediction results to more intuitively display the relevant analysis results.
 
 
+### run the test datasets
+Due to GitHub's size limit on uploaded files, we cannot upload large data files, so we uploaded the relevant data to [Google Drive](https://drive.google.com/drive/folders/1-1z7xcYS7mwpRZ2PWQ3c4Keezz1INlcn?usp=sharing). On this cloud storage platform, you can download all program files and supporting data, and these data have been configured properly and can be directly used.
 
-### Data Preprocessing
+
+# Data Preprocessing
 
 Configure the CAMB $\mathbf{params.ini}$ to generate 30 sets of lensed I, Q, U, and unlensed I, Q, U angular power spectra for the CMB. 
 ```bash
@@ -64,23 +79,8 @@ Subsequently, we use the three parameters I/Q/U to generate the corresponding T/
 
 Use the [arr_nside2048_192x512x512.npy](https://drive.google.com/file/d/1Q4QOPStMdreQ2Ic0JqNF2ZLRVPnnczMX/view?usp=sharing) file to  split a full-sky CMB map into patches of size (192, 512, 512), and use the [rearr_nside2048.npy](https://drive.google.com/file/d/1WJbkHwrOCrO-HY24FCAqQi2NcWfqc6fU/view?usp=drive_link)  to restore the sky maps.
 
+# QE delensing with delensalot
+
+We implemented QE-based delensing of the CMB T/E/B signals using the [delensalot](https://github.com/NextGenCMB/delensalot/tree/main) and [lensitbiases](https://github.com/NextGenCMB/lensitbiases) package. The results were subsequently used for comparative analysis with our proposed UNet algorithm. After properly installing delensalot, certain modifications to the configuration file [config.py](https://github.com/understars0516/cmb_delensing/blob/main/QE_delensing/config.py) are required in order to adapt the pipeline to the processing needs of the T/E/B data. Detailed instructions for these modifications can be found in the comments within the config.py file. The execution workflow of the QE algorithm is implemented in the corresponding [notebook](https://github.com/understars0516/cmb_delensing/blob/main/QE_delensing/QE_delensing.ipynb) file.
 
 
-### Cloning the Repository
-
-Clone the repository locally using Git:
-
-```bash
-git clone https://github.com/understars0516/cmb_delensing.git
-cd cmb_delensing
-python run.py
-```
-
-
-
-### ipynb example
-We also provide a sample file in the [example.ipynb](https://github.com/understars0516/cmb_delensing/blob/main/example.ipynb) format. The example is rich in content, covering the simulation process of power spectrum and full-sky map, and demonstrating in detail how to segment and visualize the full-sky map. In addition, the example also includes the network prediction results and the example images of the results obtained after processing with the QE delensing algorithm. Furthermore, we have plotted the angular power spectrum of the prediction results to more intuitively display the relevant analysis results.
-
-
-### run the test datasets
-Due to GitHub's size limit on uploaded files, we cannot upload large data files, so we uploaded the relevant data to [Google Drive](https://drive.google.com/drive/folders/1-1z7xcYS7mwpRZ2PWQ3c4Keezz1INlcn?usp=sharing). On this cloud storage platform, you can download all program files and supporting data, and these data have been configured properly and can be directly used.
