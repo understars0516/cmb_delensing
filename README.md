@@ -1,4 +1,6 @@
-# CMB Delensing with Deep Learning and Rotation Augmentation
+# CMB Delensing with Deep Learning
+
+To obtain the dataset, please read this [notebook](https://github.com/understars0516/cmb_delensing/blob/master/Datasets_readme.md).
 
 A deep learning framework for Cosmic Microwave Background (CMB) delensing using U-Net architecture with rotation-based data augmentation. This project implements state-of-the-art techniques to reconstruct unlensed CMB maps from gravitationally lensed observations.
 
